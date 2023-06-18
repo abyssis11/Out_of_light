@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7b0f9f5dfd284d46a86cb26b14400ef
+guid: 3352403c5e0713d4cb2f2280fde7b859
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,9 +42,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 50
@@ -115,7 +115,123 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: chair-flipped-sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1617dc875cf9e4349aacdae1539d50e6
+      internalID: -2023519208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair-flipped-sprite_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972bb553024b7a4479c7c45c4ee83950
+      internalID: 524441658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair-flipped-sprite_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544ebfee000c9d64b8feaa31a1a9b545
+      internalID: -1877822892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair-flipped-sprite_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed36d0cf9ab6b5f42bd70910f5196def
+      internalID: -1535502334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +242,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chair-flipped-sprite_0: -2023519208
+      chair-flipped-sprite_1: 524441658
+      chair-flipped-sprite_2: -1877822892
+      chair-flipped-sprite_3: -1535502334
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

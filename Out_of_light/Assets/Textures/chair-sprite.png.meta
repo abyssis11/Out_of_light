@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7b0f9f5dfd284d46a86cb26b14400ef
+guid: c899f07b7b832d243a31e922d2f18097
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,9 +42,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 50
@@ -115,7 +115,123 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: chair-sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: df334f4d83e9b6d43a841086ec71f53e
+      internalID: -1573635656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair-sprite_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576c5160de4708847870e4e2ffdf7a23
+      internalID: 449796368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair-sprite_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e121d95dc8d774e96d8d118fa56104
+      internalID: -706404733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chair-sprite_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      physicsShape:
+      - - {x: 0, y: -25}
+        - {x: 25, y: 0}
+        - {x: 0, y: 25}
+        - {x: -25, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0879487bd0205364784e71d6c54cf2f8
+      internalID: 1318640650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +242,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chair-sprite_0: -1573635656
+      chair-sprite_1: 449796368
+      chair-sprite_2: -706404733
+      chair-sprite_3: 1318640650
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
