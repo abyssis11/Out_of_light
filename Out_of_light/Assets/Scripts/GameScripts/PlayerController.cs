@@ -7,9 +7,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 1f;
     public float collisionOffset = 0.01f;
     public ContactFilter2D contactFilter;
+    private static bool outOfStartRoom = false;
     private Vector2 input;
     private Rigidbody2D body;
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // looking at mouse
+        LookAtMouse();
+        // moving
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
     }
 
     private void FixedUpdate()
@@ -44,6 +50,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void LookAtMouse()
+    {
+        Vector2 mousePos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
+    }
+
     private bool TryToMove(Vector2 direction)
     {
         // check for collisions
@@ -59,5 +71,19 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "StartRoomExit") 
+        {
+            Debug.Log("out");
+            outOfStartRoom = true;
+        }
+    }
+
+    public static bool ExitedStartRoom()
+    {
+        return outOfStartRoom;
     }
 }

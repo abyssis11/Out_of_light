@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-public class EnemyAI : MonoBehaviour
+public class EnemyAIOLD : MonoBehaviour
 {
     public Transform target;
     public float speed = 1f;
@@ -18,8 +18,15 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         body = GetComponent<Rigidbody2D>();
-
         InvokeRepeating("UpdatePath", 0f, 1f);
+
+    }
+    private void Update()
+    {
+        /*if (PlayerController.ExitedStartRoom())
+        {
+            InvokeRepeating("UpdatePath", 0f, 1f);
+        }*/
     }
 
     void UpdatePath()
