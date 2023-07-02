@@ -6,6 +6,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [SerializeField] private Key.KeyType type;
+    [SerializeField] AudioSource doorSound;
     private Bounds colliderBounds;
     private Transform childCollider;
     private Animator animator;
@@ -30,6 +31,7 @@ public class Door : MonoBehaviour
 
         // animate door
         animator.SetTrigger("Open");
+        doorSound.Play();
 
         // which part of graph to update
         var graphToScan = new GraphUpdateObject(colliderBounds);

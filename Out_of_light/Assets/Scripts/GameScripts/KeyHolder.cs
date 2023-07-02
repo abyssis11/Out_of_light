@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyHolder : MonoBehaviour
 {
+    [SerializeField] AudioSource collectSound;
     private List<Key.KeyType> keys;
 
     private void Awake()
@@ -32,6 +33,7 @@ public class KeyHolder : MonoBehaviour
         if (key != null)
         {
             AddKey(key.GetKeyType());
+            collectSound.Play();
             Destroy(key.gameObject); 
         }
 

@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 1f;
     public float collisionOffset = 0.01f;
     public ContactFilter2D contactFilter;
-    private AIPath enemyPathfinder;
     private static bool outOfStartRoom = false;
     private Vector2 input;
     private Rigidbody2D body;
