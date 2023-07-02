@@ -1,22 +1,28 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] Transform enemy;
+    [SerializeField] AudioSource heartBeat;
     public float speed = 1f;
     public float collisionOffset = 0.01f;
     public ContactFilter2D contactFilter;
+    private AIPath enemyPathfinder;
     private static bool outOfStartRoom = false;
     private Vector2 input;
     private Rigidbody2D body;
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    private float enemyDistance;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();    
+        body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -26,6 +32,33 @@ public class PlayerController : MonoBehaviour
         LookAtMouse();
         // moving
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        enemyDistance = Vector2.Distance(transform.position, enemy.transform.position);
+
+        if (enemyDistance >= 20f)
+        {
+            heartBeat.pitch = 1f;
+        }
+        else if (enemyDistance >= 15f)
+        {
+            heartBeat.pitch = 1.2f;
+        }
+        else if (enemyDistance >= 10)
+        {
+            heartBeat.pitch = 1.4f;
+        }
+        else if(enemyDistance >= 5f)
+        {
+            heartBeat.pitch = 1.6f;
+        }
+        else if (enemyDistance >= 3f)
+        {
+            heartBeat.pitch = 1.8f;
+        }
+        else
+        {
+            heartBeat.pitch = 2f;
+        }
+
 
     }
 
