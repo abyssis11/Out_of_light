@@ -28,7 +28,7 @@ public class EnemyFollowCollider : MonoBehaviour
     {
         if (collision.name == "Player")
         {
-            randomNmber = Random.Range(0, 4);
+            randomNmber = Random.Range(0, 3);
             Debug.Log("Player in out of range");
             parentScript.UpdateDestionation(patrolPoints[randomNmber]);
         }

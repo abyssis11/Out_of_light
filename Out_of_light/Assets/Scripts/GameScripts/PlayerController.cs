@@ -32,16 +32,17 @@ public class PlayerController : MonoBehaviour
         // moving
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         enemyDistance = Vector2.Distance(transform.position, enemy.transform.position);
+        Debug.Log(enemyDistance);
 
-        if (enemyDistance >= 20f)
+        if (enemyDistance >= 15f)
         {
             heartBeat.pitch = 1f;
         }
-        else if (enemyDistance >= 15f)
+        else if (enemyDistance >= 11f)
         {
             heartBeat.pitch = 1.2f;
         }
-        else if (enemyDistance >= 10)
+        else if (enemyDistance >= 7f)
         {
             heartBeat.pitch = 1.4f;
         }
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
         {
             heartBeat.pitch = 1.6f;
         }
-        else if (enemyDistance >= 3f)
+        else if (enemyDistance >= 2.6f)
         {
             heartBeat.pitch = 1.8f;
         }

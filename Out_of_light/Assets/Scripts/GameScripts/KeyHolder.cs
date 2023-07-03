@@ -45,6 +45,10 @@ public class KeyHolder : MonoBehaviour
                 door.OpenDoor();
                 RemoveKey(door.GetKypeKey());
             }
+            else if(!door.doorOpen)
+            {
+                door.NeedKey();
+            }
         }
     }
 }
