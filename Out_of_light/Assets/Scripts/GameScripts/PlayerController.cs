@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] Transform enemy;
     [SerializeField] AudioSource heartBeat;
+    [SerializeField] private Animator animator;
     public float speed = 1f;
     public float collisionOffset = 0.01f;
     public ContactFilter2D contactFilter;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
         LookAtMouse();
         // moving
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        animator.SetBool("running", input != Vector2.zero);
         enemyDistance = Vector2.Distance(transform.position, enemy.transform.position);
         Debug.Log(enemyDistance);
 
@@ -69,12 +71,10 @@ public class PlayerController : MonoBehaviour
         {
             // check for collisions
             bool move = TryToMove(input);
-
             // for sliding when colliding diagonally
             if (!move)
             {
                 move = TryToMove(new Vector2(input.x, 0));
-
                 if (!move)
                 {
                     move = TryToMove(new Vector2(0, input.y));

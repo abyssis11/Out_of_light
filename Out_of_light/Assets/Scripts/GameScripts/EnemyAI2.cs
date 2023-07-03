@@ -10,6 +10,7 @@ public class EnemyAI2 : MonoBehaviour
     [SerializeField] private Transform patrolPoint1;
     [SerializeField] private Transform patrolPoint2;
     [SerializeField] private Transform patrolPoint3;
+    [SerializeField] private Animator animator;
     private AIDestinationSetter destination;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class EnemyAI2 : MonoBehaviour
         if(PlayerController.ExitedStartRoom())
         {
             pathfinder.canMove = true;
+            animator.SetBool("running", pathfinder.canMove);
         }
 
     }

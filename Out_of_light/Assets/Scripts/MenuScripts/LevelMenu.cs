@@ -40,10 +40,6 @@ public class LevelMenu : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
-    public void startLevel6()
-    {
-        SceneManager.LoadScene(7);
-    }
     public void goBack()
     {
         SceneManager.LoadScene(0);

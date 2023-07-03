@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999418286559074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.504, z: 0}
+  m_LocalPosition: {x: 1.0349998, y: -0.47200006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -228,7 +228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999418445081656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.5040002, z: 0}
+  m_LocalPosition: {x: -0.965, y: -0.472, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -339,10 +339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e1b2c6ab0fb9c49a253c8c52d0b1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 2
+  type: 4
   doorSound: {fileID: 7312284773127768576}
   speechBubble: {fileID: 11819322210998591}
   speechText: {fileID: 5555806219763820307}
+  doorOpen: 0
 --- !u!61 &291999418791795517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -511,7 +512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999419275546429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.034999847, y: -0.9760001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -576,7 +577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999419539912502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: -3.95, z: -0.5097134}
+  m_LocalPosition: {x: -14.58, y: 7.7, z: -0.5097134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -595,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8d04ee1e2174648be3b2d7c6401d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyType: 2
+  keyType: 4
 --- !u!212 &291999419539912491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -638,7 +639,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b5df30ccbd9ec014b9297ed5419594e0, type: 3}
-  m_Color: {r: 0.053346362, g: 0.44495013, b: 0.764151, a: 1}
+  m_Color: {r: 0.4105922, g: 0.17532928, b: 0.4716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
