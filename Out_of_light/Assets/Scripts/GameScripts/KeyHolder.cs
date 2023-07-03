@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class KeyHolder : MonoBehaviour
 {
     [SerializeField] AudioSource collectSound;
+    public event EventHandler OnKeyChanged; 
     private List<Key.KeyType> keys;
 
     private void Awake()
@@ -12,14 +15,17 @@ public class KeyHolder : MonoBehaviour
         keys = new List<Key.KeyType>();
     }
 
+    public List<Key.KeyType> GetKeys() { return keys; }
     public void AddKey(Key.KeyType keyType)
     {
         keys.Add(keyType);
+        OnKeyChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void RemoveKey(Key.KeyType keyType)
     {
         keys.Remove(keyType);
+        OnKeyChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public bool ContainsKey(Key.KeyType keyType)
