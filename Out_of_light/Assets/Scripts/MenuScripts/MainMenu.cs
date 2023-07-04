@@ -17,12 +17,12 @@ public class MainMenu : MonoBehaviour
 
     public void TryAgain()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(GameValues.currentScene);
     }
 
     public void QuitGame()
     {
-        UnityEditor.EditorApplication.isPlaying=false;
+        //UnityEditor.EditorApplication.isPlaying=false;
         Application.Quit();
     }
 }

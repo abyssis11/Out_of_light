@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f85d002ac6809b40a96c3b885131df1
+guid: 70fe8ce0ff5f17c4fb4cda6e5d308c5f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,43 +117,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: door-sprite_0
+      name: floor-sign-sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 50
         height: 50
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3b8c8d57270cd48a270351c1e26b38
-      internalID: -731649830
+      spriteID: f609cb8fa2694464595e1bb64a02375e
+      internalID: 1105704516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door-sprite_1
+      name: floor-sign-sprite_1
       rect:
         serializedVersion: 2
         x: 50
         y: 0
         width: 50
         height: 50
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d208ee968cadb34dad5d85d7aed23b2
-      internalID: -2035002708
+      spriteID: f3451f6cbd5855d46ad264bbca8e0afa
+      internalID: 1878132154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-sign-sprite_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b91d25150cb70b4d8cd432d943f5f0b
+      internalID: -1546834171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-sign-sprite_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a7c22962909ea47a20e5fd5353a9de
+      internalID: 1912696485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-sign-sprite_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502828f4e2878a24e938dc1a69e0659b
+      internalID: 258690063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-sign-sprite_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764d8efa2ffe8654dae1573b201a22d4
+      internalID: -422493254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-sign-sprite_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b465baac555398344a3783f0f6054022
+      internalID: 2125536529
       vertices: []
       indices: 
       edges: []
@@ -169,8 +274,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      door-sprite_0: -731649830
-      door-sprite_1: -2035002708
+      floor-sign-sprite_0: 1105704516
+      floor-sign-sprite_1: 1878132154
+      floor-sign-sprite_2: -1546834171
+      floor-sign-sprite_3: 1912696485
+      floor-sign-sprite_4: 258690063
+      floor-sign-sprite_5: -422493254
+      floor-sign-sprite_6: 2125536529
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

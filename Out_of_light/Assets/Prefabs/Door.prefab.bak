@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7191054936854085523}
   - component: {fileID: 7690403476470543703}
   - component: {fileID: 3505298448739075702}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291999418286559073}
   - component: {fileID: 291999418286559072}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DoorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291999418445081663}
   - component: {fileID: 291999418445081662}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DoorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 291999418791795517}
   - component: {fileID: 291999418791795516}
   - component: {fileID: 7312284773127768576}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020867348, y: -0.81665516}
+  m_Offset: {x: -0.009438515, y: 0.1384325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -368,7 +368,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.001213, y: 0.66868496}
+  m_Size: {x: 1.9879055, y: 0.723135}
   m_EdgeRadius: 0
 --- !u!95 &291999418791795516
 Animator:
@@ -544,12 +544,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.96273136, y: 0.8730836}
-      - {x: -0.0039920807, y: 0.9317808}
-      - {x: -1.0221367, y: 0.9153893}
-      - {x: -1.0188555, y: 0.29004836}
-      - {x: -0.044397354, y: 0.22525072}
-      - {x: 0.98916626, y: 0.25694174}
+    - - {x: 0.9941969, y: 0.4966092}
+      - {x: 0.027235985, y: 0.5240965}
+      - {x: -1.0013952, y: 0.5179541}
+      - {x: -0.9978956, y: 0.2797315}
+      - {x: 0.008016586, y: 0.2359128}
+      - {x: 1.0101452, y: 0.24667352}
 --- !u!1 &291999419539912502
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 291999419539912501}
   - component: {fileID: 291999419539912491}
   - component: {fileID: 291999419539912500}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999419539912502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.64, y: 17.05, z: -0.5097134}
+<<<<<<< HEAD
+  m_LocalPosition: {x: -0.49, y: -12.89, z: -0.5097134}
+=======
+  m_LocalPosition: {x: -14.58, y: 7.7, z: -0.5097134}
+>>>>>>> ed442b870b0085a99d7b82be31cd9874e2e42a3e
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -677,7 +681,7 @@ GameObject:
   - component: {fileID: 3526978719947284308}
   - component: {fileID: 2480573264993712634}
   - component: {fileID: 5319917841686034438}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +781,7 @@ GameObject:
   - component: {fileID: 5313388689365956079}
   - component: {fileID: 4483477050121651455}
   - component: {fileID: 5555806219763820307}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +837,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ec884e7f44c5db348b4f19cc410de74d, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0

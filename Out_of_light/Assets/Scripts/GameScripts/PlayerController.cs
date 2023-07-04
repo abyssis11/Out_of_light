@@ -1,8 +1,9 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D body;
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private float enemyDistance;
+    private SaveObject saveObject;
 
 
     // Start is called before the first frame update
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         animator.SetBool("running", input != Vector2.zero);
         enemyDistance = Vector2.Distance(transform.position, enemy.transform.position);
-        Debug.Log(enemyDistance);
+        //Debug.Log(enemyDistance);
 
         if (enemyDistance >= 15f)
         {
@@ -113,10 +115,72 @@ public class PlayerController : MonoBehaviour
             Debug.Log("out");
             outOfStartRoom = true;
         }
+        else if (collision.name == "Enemy")
+        {
+            GameValues.currentScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(8);
+        } else if (collision.name == "NextLevel") {
+            Debug.Log("Finished level " + (SceneManager.GetActiveScene().buildIndex-1));
+            if (SceneManager.GetActiveScene().buildIndex < 7)
+            {
+                Debug.Log("Saving");
+                SaveData(SceneManager.GetActiveScene().buildIndex);
+            }
+            Invoke("nextLevel", 1.5f);
+        }
+    }
+
+    public void nextLevel() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public static bool ExitedStartRoom()
     {
         return outOfStartRoom;
     }
+
+    private void SaveData(int level)
+    {
+        // load exsisting data if exists
+        if(File.Exists(Application.dataPath + "/save.txt"))
+        {
+            saveObject = LoadData();
+        }
+        else
+        {
+            saveObject = new SaveObject();
+        }
+
+        // add new level
+        switch (level)
+        {
+            case 2:
+                saveObject.level2 = true;
+                break;
+            case 3:
+                saveObject.level3 = true;
+                break;
+            case 4:
+                saveObject.level4 = true;
+                break;
+            case 5:
+                saveObject.level5 = true;
+                break;
+            default:
+                break;
+        }
+
+        // save to file
+        string json = JsonUtility.ToJson(saveObject);
+        Debug.Log(json);
+        File.WriteAllText(Application.dataPath + "/save.txt", json);
+    }
+
+    private SaveObject LoadData()
+    {
+        string saveString = File.ReadAllText(Application.dataPath + "/save.txt"); 
+        SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
+        return saveObject;
+    }
+    
 }

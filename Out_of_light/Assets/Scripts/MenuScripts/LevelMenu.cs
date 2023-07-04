@@ -1,4 +1,5 @@
 using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,12 +12,21 @@ public class LevelMenu : MonoBehaviour
     [SerializeField] public Button button3;
     [SerializeField] public Button button4;
     [SerializeField] public Button button5;
-    void Start()
+    private SaveObject saveObject;
+    void Awake()
     {
-        button2.interactable=false;
-        button3.interactable=false;
-        button4.interactable=false;
-        button5.interactable=false;
+        if (File.Exists(Application.dataPath + "/save.txt"))
+        {
+            saveObject = LoadData();
+        }
+        else
+        {
+            saveObject = new SaveObject();
+        }
+        button2.interactable= saveObject.level2;
+        button3.interactable= saveObject.level3;
+        button4.interactable= saveObject.level4;
+        button5.interactable= saveObject.level5;
     }
     public void startLevel1()
     {
@@ -47,4 +57,12 @@ public class LevelMenu : MonoBehaviour
     {
         button.interactable = true;
     }
+
+    private SaveObject LoadData()
+    {
+        string saveString = File.ReadAllText(Application.dataPath + "/save.txt");
+        SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
+        return saveObject;
+    }
+
 }

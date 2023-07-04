@@ -42,29 +42,15 @@ public class CardDoor : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Player" && !doorOpen)
+        if(collision.tag == "Player" && !doorOpen)
         {
+            Debug.Log("Card door");
             speechText.text = "Find the electrical box";
             speechBubble.SetActive(true);
         }
     }
     private void LateUpdate()
     {
-        if (transform.rotation.z == 0)
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 0.8f, 0));
-        }
-        else if (transform.rotation.z == 180)
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, -0.8f, 0));
-        }
-        else if (transform.rotation.z == 90)
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0.5f, 0.8f, 0));
-        }
-        else
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(-0.5f, 0.8f, 0));
-        }
+        speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position);
     }
 }

@@ -17,6 +17,7 @@ public class EnemyAI2 : MonoBehaviour
     {
         pathfinder = GetComponent<AIPath>();
         destination = GetComponent<AIDestinationSetter>();
+        pathfinder.canMove = false;
     }
 
     // Update is called once per frame
