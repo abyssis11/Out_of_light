@@ -343,6 +343,7 @@ MonoBehaviour:
   doorSound: {fileID: 7312284773127768576}
   speechBubble: {fileID: 11819322210998591}
   speechText: {fileID: 5555806219763820307}
+  doorOpen: 0
 --- !u!61 &291999418791795517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -576,7 +577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999419539912502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: -3.95, z: -0.5097134}
+  m_LocalPosition: {x: -0.49, y: -12.89, z: -0.5097134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

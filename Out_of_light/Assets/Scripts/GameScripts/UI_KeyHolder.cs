@@ -39,7 +39,7 @@ public class UI_KeyHolder : MonoBehaviour
             Key.KeyType key = keys[i];
             Transform keyTransform = Instantiate(keyTamplate.transform, container);
             keyTransform.gameObject.SetActive(true);
-            keyTransform.GetComponent<RectTransform>().anchoredPosition = new Vector2(100 * i, 0);
+            keyTransform.GetComponent<RectTransform>().anchoredPosition = new Vector2(50 * i, 0);
             Image keyImage = keyTransform.Find("Image").GetComponent<Image>();
             //Red, Green, Blue, Orange, Purple, Brown, Yellow, Pink, White, Gray
             switch (key)

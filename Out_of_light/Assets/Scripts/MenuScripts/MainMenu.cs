@@ -10,6 +10,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void TryAgain()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying=false;

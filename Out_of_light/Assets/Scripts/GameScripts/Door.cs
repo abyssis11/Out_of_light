@@ -54,20 +54,6 @@ public class Door : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(transform.rotation.z == 0)
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 0.8f, 0));
-        }
-        else if(transform.rotation.z == 180) {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, -0.8f, 0));
-        }
-        else if(transform.rotation.z == 90)
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0.5f, 0.8f, 0));
-        }
-        else
-        {
-            speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(-0.5f, 0.8f, 0));
-        }
+        speechBubble.transform.position = Camera.main.WorldToScreenPoint(transform.position);
     }
 }

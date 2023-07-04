@@ -11,14 +11,12 @@ public class LevelMenu : MonoBehaviour
     [SerializeField] public Button button3;
     [SerializeField] public Button button4;
     [SerializeField] public Button button5;
-    [SerializeField] public Button button6;
     void Start()
     {
         button2.interactable=false;
         button3.interactable=false;
         button4.interactable=false;
         button5.interactable=false;
-        button6.interactable=false;
     }
     public void startLevel1()
     {
@@ -39,10 +37,6 @@ public class LevelMenu : MonoBehaviour
     public void startLevel5()
     {
         SceneManager.LoadScene(6);
-    }
-    public void startLevel6()
-    {
-        SceneManager.LoadScene(7);
     }
     public void goBack()
     {
